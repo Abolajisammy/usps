@@ -1,0 +1,22 @@
+
+.box-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+.box{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 17, 73);
+    padding: 10px;
+    margin: 0px 10px;
+}
+.box-2{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    background-color: rgb(17, 73, 46);
+    padding: 10px;
+    margin: 0px 10px;
+}

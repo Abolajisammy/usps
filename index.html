@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track my Item</title>
+    <link rel="shortcut icon" href="/icons/usps-logi.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="https://www.usps.com"><img src="/icons/usps-logi-removebg-preview.png" alt=""></a>
+
+        </nav>
+        <div class="urgent" style="background-color: red;
+        padding: 10px 20px;
+        line-height: 15px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        font-weight: 900;">
+        </div>
+        <div class="usps">
+            <h1>USPS TRACKING</h1>
+            <a href="https://faq.usps.com/s/article/Where-is-my-package">FAQs</a>
+        </div>
+    </header>
+    <section class="form-wrapper">
+        <form action="" method="post">
+
+            <input type="number" name="tracking_number" id="tracking-number" placeholder="Enter up to 35 tracking numbers seperated by commas or enter a barcode number">
+
+
+            <a id="submit-button" onclick="namePassword()">
+                <input type="button" value="Track" id="submit-button">
+            </a>
+
+            <h6 class="error-message">Incorrect Tracking Numbers, try again!</h6>
+
+        </form>
+    </section>
+    <section class="tracking-faq">
+        <div class="what">
+            <div class="what-header">
+                <h3>What does my tracking number look like?</h3>
+                <img src="/icons/arrow-down-main.png" alt="" onclick="closeBar()" id="my_image">
+            </div>
+            <div class="tracking-no-sample">
+                <h6>SERVICE/SAMPLE NUMBER</h6>
+                <p>USPS Tracking® <br>9400 1000 0000 0000 0000 00</p>
+
+                <p>Priority Mail® <br>9205 5000 0000 0000 0000 00</p>
+
+                <p>Certified Mail® <br>9407 3000 0000 0000 0000 00</p>
+
+                <p>Collect On Delivery Hold For Pickup  <br>9303 3000 0000 0000 0000 00</p>
+
+                <p>Global Express Guaranteed® <br>82 000 000 00</p>
+
+                <p>Priority Mail Express International® <br>EC 000 000 000 US</p>
+
+                <p>Priority Mail Express® <br>9270 1000 0000 0000 0000 00 <br>
+                EA 000 000 000 US</p>
+
+                <p>Priority Mail International® <br>
+                CP 000 000 000 US</p>
+
+                <p>Registered Mail™ <br>9208 8000 0000 0000 0000 00</p>
+
+                <p>Certified Mail® <br>9202 1000 0000 0000 0000 00</p>
+            </div>
+        </div>
+
+        <div class="what where">
+            <div class="what-header where-header">
+                <h3>Where do I find my tracking number</h3>
+                <img src="/icons/arrow-down-main.png" alt="" onclick="closeBar1()">
+            </div>
+            <div class="tracking-no-sample">
+                <h6>Your tracking number can be found in the following places:</h6>
+                <ul>
+                    <li>Your Post Office™ shipping receipt</li>
+                    <li>Your sales receipt if you bought insurance at the Post Office™</li>
+                    <li>Your emmail confirmation if you shipped from USPS.com</li>
+                    <li>The shipping confirmation email you received from an online retailer</li>
+                    <li>The bottom peel-off portion of your USPS Tracking® label</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="what how">
+            <div class="what-header how-header">
+                <h3>How can I leave delivery instructions?</h3>
+                <img src="/icons/arrow-down-main.png" alt="" onclick="closeBar2()">
+            </div>
+            <div class="tracking-no-sample">
+                <p>If a package qualifies for the USPS Delivery Instructions™ service, you can tell USPS where to leave a package at your address, send it to a different address, or send it to your Post Office.</p>
+                <p>Click Change Delivery Instructions on the tracking results page to leave your request. If you do not see the Change Delivery Instructions link, your package is not eligible for the Delivery Instructions service.</p>
+                <h6>No “Delivery Instructions” Link</h6>
+                <p>There are several reasons a package may not be eligible for Delivery Instructions.</p>
+                <p>Ineligible packages may have:</p>
+                <ul>
+                    <li>Already left the Post Office for delivery</li>
+                    <li>A Hold Mail request</li>
+                    <li>A Forward Mail request</li>
+                    <li>A military (APO/FPO) or DPO address</li>
+                    <li>An international sender</li>
+                    <li>A Delivery Signature request</li>
+                    <li>A Collect on Delivery (COD) request</li>
+                    <li>An active USPS Package Intercept® order</li>
+                    <li>Insurance for $500 or more</li>
+                </ul>
+                <h6>Delivery Instructions FAQs</h6>
+            </div>
+
+        </div>
+    </section>
+    <section class="faqs-question">
+        <h2>Can't find what you're looking for?</h2>
+        <p>Go to our FAQs section to find answers to find answers to your tracking questions.</p>
+        <a href="">FAQs</a>
+    </section>
+    <footer>
+        <div class="usps-footer-header"><img src="/icons/usps-full-logo-removebg-preview.png" alt=""></div>
+        <div class="footer-info">
+            <ul>
+                <h6>HELPFUL LINKS</h6>
+                <li><a href=""></a>Contact Us</li>
+                <li><a href="">Site Index</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+            <ul>
+                <h6>ON ABOUT.USPS.COM</h6>
+                <li><a href="">About USPS Home</a></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">USPS Service Updates</a></li>
+                <li><a href="">Forms & Publications</a></li>
+                <li><a href="">Government Services</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+            <ul>
+                <h6>OTHER USPS SITES</h6>
+                <li><a href="">Business Customer Gateway</a></li>
+                <li><a href="">Postal Inspectors</a></li>
+                <li><a href=.>Inspector General</a></li>
+                <li><a href=".">Postal Explorer</a></li>
+                <li><a href=".">National Postal Museum</a></li>
+                <li><a href=".">Resources for Developers</a></li>
+                <li><a href=.">PostalPro </a></li>
+
+            </ul>
+            <ul>
+                <h6>LEGAL INFORMATION</h6>
+                <li><a href=" ">Privacy Policy</a></li>
+                <li><a href=" ">Terms of Use</a></li>
+                <li><a href=" ">FOIA</a></li>
+                <li><a href=" ">No FEAR Act/EEO Contacts</a></li>
+                <li><a href=" ">Fair Chance Act</a></li>
+                <li><a href=" ">Accessibility Statement</a></li>
+
+            </ul>
+        </div>
+        <span>Copyright © 2024 USPS. All Rights Reserved.</span>
+    </footer>
+</body>
+<script src="/trac.js"></script>
+<script src="/script.js"></script>
+</html>
